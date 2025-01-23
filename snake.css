@@ -1,15 +1,77 @@
-body{
-    overflow: hidden;
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-.container{
+
+/* 容器样式 */
+.container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
+
+/* 标题样式 */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 记分板样式 */
+.scoreboard {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* 按钮样式 */
+.btn-start {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff7eb3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn-start:hover {
+    background: #ff4f81;
+}
+
+/* 画布样式 */
 canvas {
     background-image: url('https://lmusic-1302280959.cos.ap-chengdu.myqcloud.com/snake/background.png');
-    background-size: cover; /* 可选：调整背景图片的大小以适应画布 */
-    width: 500px;
-    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid #ff7eb3;
+    border-radius: 10px;
+}
+
+/* 页脚样式 */
+.footer {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.footer a:hover {
+    color: #0056b3;
 }

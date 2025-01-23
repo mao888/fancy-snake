@@ -2,6 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>毛的 花样贪吃蛇</title>
     <link rel="stylesheet" href="snake.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -10,11 +11,15 @@
 <body>
 <div id="app">
     <div class="container">
-        <div>毛的 花样贪吃蛇</div>
-        <div>得分: {{ score }}
-            <button @click="snake.start()">开始游戏</button>
+        <h1 class="title">毛的 花样贪吃蛇</h1>
+        <div class="scoreboard">
+            <span>得分: {{ score }}</span>
+            <button class="btn-start" @click="snake.start()">开始游戏</button>
         </div>
         <canvas id="canvas" width="600" height="600"></canvas>
+        <footer class="footer">
+            <a href="https://home.huchao.vip/" target="_blank">访问我的个人主页</a>
+        </footer>
     </div>
 </div>
 </body>

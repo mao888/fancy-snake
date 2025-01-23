@@ -361,7 +361,7 @@ createApp({
                     snake.drawSnake();
 
                     this.start();
-                }, 200);
+                }, 280);
             },
             //蛇头转换
             snakeHeadChange(i, j, rotate) {
